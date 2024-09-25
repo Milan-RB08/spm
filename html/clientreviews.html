@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="2gLyNF8wRxbHYEVJkzbunCULPtAl1Jwi2CNMlhiw">
+
+    <title>MRB_Trek</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://mmatnepal.com/images/favicon.ico">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <script src="https://kit.fontawesome.com/535ccb550f.js" crossorigin="anonymous"></script>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+
+    <style>
+        .white-card {
+            background: rgba(49, 79, 162, 0.15);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(7.5px);
+            -webkit-backdrop-filter: blur(7.5px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body class="font-sans antialiased">
+    <div class="min-h-screen bg-gray-100">
+
+        <div class="w-full bg-[#eb8d02] hidden md:block">
+            <div class="w-11/12 mx-auto grid grid-cols-2 h-10">
+
+                <div>
+                    <div class="flex items-center h-full justify-left text-xs text-amber-500">
+                        <a href="https://www.facebook.com/mmatnepal" target="_blank">
+                            <div
+                                class="w-6 h-6 rounded-full bg-white flex items-center justify-center mx-1 hover:bg-blue-600 hover:text-white transition-all">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/mmat.nepal" target="_blank">
+                            <div
+                                class="w-6 h-6 rounded-full bg-white flex items-center justify-center mx-1 hover:bg-red-600 hover:text-white transition-all">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                        </a>
+                        <a href="https://wa.me/9855090899" target="_blank">
+                            <div
+                                class="w-6 h-6 rounded-full bg-white flex items-center justify-center mx-1 hover:bg-green-500 hover:text-white transition-all">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex text-gray-50 items-center h-full text-sm justify-end">
+                        <div class="pr-4">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                <a href="tel:+" class="hover:text-gray-100 hover:underline">+977-9855090899</a>
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span> <a href="mailto:" class="hover:text-gray-100 hover:underline">info@mmatnepal.com</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="w-full bg-[#1d508d] sticky top-0 z-10 hidden md:block">
+            <div class="w-11/12 mx-auto text-white font-bold flex justify-between h-full items-center">
+
+                <div class=" bg-white">
+                    <a href="https://mmatnepal.com">
+                        <img src="https://mmatnepal.com/images/logo.png" class=" h-16">
+                    </a>
+                </div>
+
+                <div>
+                    <ul class="flex">
+                        <li class="mx-4  hover:text-[#eb8d02] transition-all ease-in-out">
+                            <a href="/">
+                                Home
+                            </a>
+                        </li>
+                        <li class="mx-4  hover:text-[#eb8d02] transition-all ease-in-out">
+                            <a href="https://mmatnepal.com/about">
+                                About
+                            </a>
+                        </li>
+                        <li class="mx-4  hover:text-[#eb8d02] transition-all ease-in-out">
+                            <a href="https://mmatnepal.com/flights">
+                                Flights
+                            </a>
+                        </li>
+                        <li class="mx-4  hover:text-[#eb8d02] transition-all ease-in-out">
+                            <a href="https://mmatnepal.com/tours">
+                                Packages
+                            </a>
+                        </li>
+                        <li class="mx-4  hover:text-[#eb8d02] transition-all ease-in-out">
+                            <a href="https://mmatnepal.com/trekkings">
+                                Trekkings
+                            </a>
+                        </li>
+                        <li class="mx-4  hover:text-[#eb8d02] transition-all ease-in-out">
+                            <a href="https://mmatnepal.com/blogs">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="mx-4 text-[#eb8d02] hover:text-[#eb8d02] transition-all ease-in-out">
+                            <a href="https://mmatnepal.com/clientreviews">
+                                Client Reviews
+                            </a>
+                        </li>
+
+                        <li class="mx-4  hover:text-[#eb8d02] transition-all ease-in-out">
+                            <a href="https://mmatnepal.com/gallery">
+                                Gallery
+                            </a>
+                        </li>
+                        <li class="mx-4  hover:text-[#eb8d02] transition-all ease-in-out">
+                            <a href="https://mmatnepal.com/contact">
+                                Contact Us
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="w-full bg-[#1d508d] sticky top-0 z-10 md:hidden" x-data="{isNav:false}">
+            <div class="w-11/12 mx-auto flex justify-between items-center py-2">
+                <div class=" bg-white">
+                    <a href="https://mmatnepal.com">
+                        <img src="https://mmatnepal.com/images/logo.png" class=" h-16">
+                    </a>
+                </div>
+                <div>
+                    <button>
+                        <i class="fa-solid fa-bars text-2xl text-white" x-on:click="isNav = true"></i>
+                    </button>
+
+                </div>
+            </div>
+            <div x-show="isNav" class="w-full py-2 bg-[#1d508d]" @click.outside="isNav = false"
+                x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-90"
+                x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-300"
+                x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
+                <ul class="pl-5 py-2 text-white">
+                    <li class="mx-4 py-2  hover:text-[#eb8d02] transition-all ease-in-out">
+                        <a href="/">
+                            Home
+                        </a>
+                    </li>
+                    <li class="mx-4 py-2  hover:text-[#eb8d02] transition-all ease-in-out">
+                        <a href="https://mmatnepal.com/about">
+                            About
+                        </a>
+                    </li>
+                    <li class="mx-4 py-2  hover:text-[#eb8d02] transition-all ease-in-out">
+                        <a href="https://mmatnepal.com/flights">
+                            Flights
+                        </a>
+                    </li>
+                    <li class="mx-4 py-2  hover:text-[#eb8d02] transition-all ease-in-out">
+                        <a href="https://mmatnepal.com/tours">
+                            Packages
+                        </a>
+                    </li>
+                    <li class="mx-4 py-2  hover:text-[#eb8d02] transition-all ease-in-out">
+                        <a href="https://mmatnepal.com/trekkings">
+                            Trekkings
+                        </a>
+                    </li>
+                    <li class="mx-4 py-2  hover:text-[#eb8d02] transition-all ease-in-out">
+                        <a href="https://mmatnepal.com/blogs">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="mx-4 py-2 text-[#eb8d02] hover:text-[#eb8d02] transition-all ease-in-out">
+                        <a href="https://mmatnepal.com/clientreviews">
+                            Client Reviews
+                        </a>
+                    </li>
+
+                    <li class="mx-4 py-2  hover:text-[#eb8d02] transition-all ease-in-out">
+                        <a href="https://mmatnepal.com/gallery">
+                            Gallery
+                        </a>
+                    </li>
+                    <li class="mx-4 py-2  hover:text-[#eb8d02] transition-all ease-in-out">
+                        <a href="https://mmatnepal.com/contact">
+                            Contact Us
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="w-full bg-gray-100">
+            <div class="w-11/12 mx-auto py-14">
+                <h1 class="text-4xl text-gray-800 font-semibold text-center">
+                    Our Client Reviews
+                </h1>
+                <div class="flex justify-center items-center">
+                    <p class="text-gray-600 my-3 text-center max-w-md">
+                        Satisfied Clients and their sayings.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-10 mt-8">
+                    <div
+                        class=" py-2 rounded-md group overflow-hidden shadow-md shadow-gray-200 hover:shadow-gray-300 transition-all duration-500">
+                        <div class="">
+                            <div class="flex justify-center items-center">
+                                <img src="../images/reviews/sudip.jpg" class="w-24 h-24 shadow-lg rounded-full">
+
+                            </div>
+                            <div class="my-3 flex justify-center">
+
+
+
+
+
+                                <i class="fa-solid  mx-1 fa-star text-[#eb8d02]"></i>
+                                <i class="fa-solid  mx-1 fa-star text-[#eb8d02]"></i>
+                                <i class="fa-solid  mx-1 fa-star text-[#eb8d02]"></i>
+                                <i class="fa-solid  mx-1 fa-star text-[#eb8d02]"></i>
+                                <i class="fa-solid  mx-1 fa-star text-[#eb8d02]"></i>
+                            </div>
+                            <h3 class="text-gray-700 text-xl font-semibold text-center mt-3">Sudip Parajuli</h3>
+                            <div class="flex justify-center">
+                                <p class="text-center text-gray-500 italic mt-1">
+                                    &quot; Best Service. Langtang trek was awesome. Thank you. &quot;
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div
+                        class=" py-2 rounded-md group overflow-hidden shadow-md shadow-gray-200 hover:shadow-gray-300 transition-all duration-500">
+                        <div class="">
+                            <div class="flex justify-center items-center">
+                                <img src="../images/reviews/manaslu.jpg" class="w-24 h-24 shadow-lg rounded-full">
+
+                            </div>
+                            <div class="my-3 flex justify-center">
+
+
+
+
+
+                                <i class="fa-solid  mx-1 fa-star text-[#eb8d02]"></i>
+                                <i class="fa-solid  mx-1 fa-star text-[#eb8d02]"></i>
+                                <i class="fa-solid  mx-1 fa-star text-[#eb8d02]"></i>
+                                <i class="fa-solid  mx-1 fa-star text-[#eb8d02]"></i>
+                                <i class="fa-solid  mx-1 fa-star text-[#eb8d02]"></i>
+                            </div>
+                            <h3 class="text-gray-700 text-xl font-semibold text-center mt-3">Meelan</h3>
+                            <div class="flex justify-center">
+                                <p class="text-center text-gray-500 italic mt-1">
+                                    &quot; Manaslu Circuit!!! It was awesome &quot;
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div
+                        class=" py-2 rounded-md group overflow-hidden shadow-md shadow-gray-200 hover:shadow-gray-300 transition-all duration-500">
+                        <div class="">
+                            <div class="flex justify-center items-center">
+                                <img src="../images/reviews/annapurna.jpg" class="w-24 h-24 shadow-lg rounded-full">
+
+                            </div>
+                            <div class="my-3 flex justify-center">
+
+
+
+
+
+                                <i class="fa-solid  mx-1 fa-star text-[#eb8d02]"></i>
+                                <i class="fa-solid  mx-1 fa-star text-[#eb8d02]"></i>
+                                <i class="fa-solid  mx-1 fa-star text-[#eb8d02]"></i>
+                                <i class="fa-solid  mx-1 fa-star text-[#eb8d02]"></i>
+                                <i class="fa-solid  mx-1 fa-star text-[#eb8d02]"></i>
+                            </div>
+                            <h3 class="text-gray-700 text-xl font-semibold text-center mt-3">Milan Ranabhat</h3>
+                            <div class="flex justify-center">
+                                <p class="text-center text-gray-500 italic mt-1">
+                                    &quot; Annapurna was awesome. Thanks MMAT for your service. &quot;
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+        <div class="fixed top-32 right-6">
+            <button class="py-2 px-5 bg-[#eb8d02] shadow-md rounded-md hover:bg-[#ff9a04] hover:text-white"
+                onclick="showModel()">
+                <i class="fas fa-feather-alt pr-2"></i> Add Your Review
+            </button>
+        </div>
+
+
+
+        <!-- Main modal -->
+        <div id="showModel"
+            class="white-card hidden dark:bg-white dark:bg-opacity-10 overflow-y-auto overflow-x-hidden fixed right-0 left-0 top-20 z-50 justify-center items-center md:h-full md:inset-0  align-middle py-16">
+            <div class="relative px-4 w-full max-w-md h-full md:h-auto mx-auto ">
+                <!-- Modal content -->
+                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700 pb-16">
+
+                    <form class="px-6 pb-4 space-y-6 lg:px-8 sm:pb-6 xl:pb-8" method="post" action="#"
+                        enctype="multipart/form-data">
+                        <input type="hidden" name="_token" value="2gLyNF8wRxbHYEVJkzbunCULPtAl1Jwi2CNMlhiw">
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white pt-6 mb-0 text-center">Add Your
+                            Review About Us</h3>
+
+                        <div class="my-2">
+                            <input type="text" name="title" id=""
+                                class="w-full border-none shadow-lg rounded-md placeholder:text-gray-700 focus:ring-amber-500"
+                                placeholder="Enter Name" value="">
+                        </div>
+
+                        <div class="my-2">
+                            <input type="number" name="star" id=""
+                                class="w-full border-none shadow-lg rounded-md placeholder:text-gray-700 focus:ring-amber-500"
+                                placeholder="Enter Rating number out of 5" max="5" min="1" value="">
+                        </div>
+
+                        <div class="mt-5">
+                            <textarea name="description"
+                                class="w-full border-none shadow-lg rounded-md placeholder:text-gray-700 focus:ring-amber-500 "
+                                placeholder="Enter your review"></textarea>
+                        </div>
+                        <div class="mt-5">
+                            <input type="file" name="photopath" id=""
+                                class="w-full border-none shadow-lg rounded-md placeholder:text-gray-700 focus:ring-amber-500 file:bg-[#eb8d02] file:border-none file:text-white file:shadow-md file:rounded-md file:hover:bg-[#ff9a01] file:cursor-pointer ">
+                        </div>
+
+                        <div class="flex my-6 justify-center">
+                            <a class="py-2 px-4 mx-2 rounded-md cursor-pointer text-white bg-red-500 shadow-md shadow-red-200 hover:bg-red-600 hover:shadow-sm dark:shadow-gray-600"
+                                onclick="hidedelete()">Cancel</a>
+
+                            <input type="submit" value="Submit"
+                                class="bg-[#1d508d] px-8 py-1 ml-4 rounded-md shadow-md hover:shadow-lg hover:bg-[#225da5] text-white">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="bg-[#1d508d] w-full">
+            <div class="w-11/12 mx-auto grid md:grid-cols-3 pt-8 gap-10">
+                <div>
+                    <h4 class="text-white text-2xl font-semibold">Contact Us</h4>
+                    <p class="text-white text-xl font-semibold py-1">Majestic Mountain Adventure and Tours Pvt. Ltd.</p>
+                    <p class="text-gray-200 my-1">
+                        <i class="fa fa-map-marker-alt"></i> <span class="px-1">Bharatpur, Chitwan</span>
+                    </p>
+                    <p class="text-gray-200 my-1">
+                        <i class="fa fa-phone"></i> <span class="px-1">+977-9855090899</span>
+                    </p>
+                    <p class="text-gray-200 my-1">
+                        <i class="fa fa-envelope"></i> <span class="px-1">info@mmatnepal.com</span>
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white text-2xl font-semibold">Subscribe Newsletter</h4>
+                    <form class="my-2" action="#" method="post">
+                        <input type="hidden" name="_token" value="2gLyNF8wRxbHYEVJkzbunCULPtAl1Jwi2CNMlhiw"> <input
+                            type="email" name="email" id="email" placeholder="Email Address"
+                            class="bg-transparent text-white border-white rounded-md py-1 placeholder:text-white block">
+
+                        <input type="submit" value="Subscribe"
+                            class="text-black py-1 mt-2 px-8 rounded-md bg-white hover:bg-gray-200 cursor-pointer transition-all duration-500">
+                    </form>
+                </div>
+
+                <div>
+                    <h4 class="text-white text-2xl font-semibold">Certificate & Partners</h4>
+                    <img src="../images/footer/partners.jpeg" class="mt-4">
+                </div>
+
+
+            </div>
+            <div class="bg-blue-900 w-full mt-4 py-4">
+                <div class="flex md:flex-row   flex-col justify-between w-11/12 mx-auto items-center">
+                    <p class="text-gray-100 order-2 md:order-1 text-center font-light">
+                        &copy; 2024 All Right Reserved | MMAT NEPAL | Designed and Developed By <a href="#"
+                            class="hover:underline hover:text-red-400">Me</a>
+                    </p>
+                    <p class="text-gray-100 mt-4 order-1 md:order-2 md:mt-0 text-center font-light flex items-center">
+                        We Accept: <span class="flex pl-4">
+                            <img src="../images/footer/mastercard.jpeg">
+                            <img src="../images/footer/connectips.png">
+                            <img src="../images/footer/esewa.png">
+                        </span>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>
+        function showModel() {
+            $('#showModel').removeClass('hidden');
+            $('#showModel').addClass('flex');
+
+        }
+
+        function hidedelete() {
+            $('#showModel').removeClass('flex');
+            $('#showModel').addClass('hidden');
+        }
+    </script>
+</body>
+
+</html>
